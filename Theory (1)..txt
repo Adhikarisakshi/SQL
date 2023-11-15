@@ -1,0 +1,22 @@
+JDBC 
+
+There are 4 JDBC Drivers-
+1.JDBC-ODBC bridge driver(old and not used)
+2.Native API Driver(majorly used by the db vendors)
+3.Network Porotocal pure java driver
+4.Thin driver(most effective)
+
+JDBC COMPONENTS
+
+1.DriverMananger Class - methods (.getconnection)main one
+2.Connection interface - instance used for getting connection
+3.Statement and PreparedStatement interface - used for running sql queries
+4.ResultSet interface 
+
+
+PROCESS 
+1.Connect you IDE with the connectors required.
+2.Load necessary Drivers
+3.Create Connection
+4.Create Statements
+5.Execute Queries

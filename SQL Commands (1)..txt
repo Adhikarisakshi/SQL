@@ -1,0 +1,125 @@
+mysql> CREATE DATABASE IF NOT EXISTS mydb;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use mydb;
+Database changed
+
+mysql> CREATE TABLE students(
+    -> id INT AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(255) NOT NULL,
+    -> age INT NOT NULL,
+    -> marks DOUBLE NOT NULL)
+    -> ;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> describe students;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int          | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(255) | NO   |     | NULL    |                |
+| age   | int          | NO   |     | NULL    |                |
+| marks | double       | NO   |     | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> INSERT INTO students(name,age,marks) VALUES("Sakshi",22,95);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from students
+    -> ;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
++----+--------+-----+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from students;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
+|  2 | Saisha |  23 |  85.5 |
++----+--------+-----+-------+
+2 rows in set (0.00 sec)
+
+mysql> select * from students;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
++----+--------+-----+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from students;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
+|  3 | Ankita |  25 |  75.3 |
++----+--------+-----+-------+
+2 rows in set (0.00 sec)
+
+mysql> select * from students
+    -> ;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
+|  3 | Ankita |  25 |  78.8 |
++----+--------+-----+-------+
+2 rows in set (0.00 sec)
+
+mysql> select * from students;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
+|  3 | Ankita |  25 |  78.8 |
+|  4 | Rohit  |  24 |    89 |
+|  5 | shyam  |  25 |    95 |
++----+--------+-----+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from students
+    -> ;
++----+--------+-----+-------+
+| id | name   | age | marks |
++----+--------+-----+-------+
+|  1 | Sakshi |  22 |    95 |
+|  3 | Ankita |  25 |  78.8 |
+|  4 | Rohit  |  24 |    89 |
+|  5 | shyam  |  25 |    95 |
+|  6 | Raj    |  23 |  78.9 |
++----+--------+-----+-------+
+5 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

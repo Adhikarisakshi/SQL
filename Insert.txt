@@ -1,0 +1,12 @@
+String query = String.format("INSERT INTO students(name,age,marks) VALUES('%s',%d,%f)","Saisha",23,85.5);
+            int rowsAffected = statement.executeUpdate(query);
+            if(rowsAffected>0)
+            {
+                System.out.println("Data inserted successfully");
+
+            }
+            else {
+                System.out.println("Data not inserted");
+            }
+
+        }
